@@ -6,7 +6,7 @@ const PDFWithQRCode = () => {
     <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
       {/* Embed the PDF file */}
       <embed 
-        src="/bachelor-answers (1).pdf" 
+        src="/bachelor-answers.pdf" 
         type="application/pdf" 
         style={{ width: '100%', height: '100%' }} 
       />
@@ -19,10 +19,11 @@ const PDFWithQRCode = () => {
           background: 'white', 
           padding: '10px', 
           borderRadius: '8px', 
-          boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' 
+          boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', 
+          display:'none'
         }}
       >
-        <QRCode value="https://example.com" size={128} />
+        <QRCode value="https://bmbs.vercel.app/" size={128} />
       </div>
     </div>
   );
